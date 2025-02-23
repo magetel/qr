@@ -34,5 +34,10 @@ else:
     st.write("No conforme")
 st.text_area('Firma del propietario-contacto')
 #st.divider()
-st.button("Enviar CONFORMIDAD")
+if st.button("Enviar CONFORMIDAD"):
+    if on:
+        st.success('Gracias por su confirmidad!', icon="✅")
+    else:
+        st.warning('Contactaremos con usted lo más rápido posible', icon="⚠️")
+
 
