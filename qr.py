@@ -34,3 +34,5 @@ else:
     st.write("No conforme")
 st.text_area('Firma del propietario-contacto')
 #st.divider()
+st.button("Enviar CONFORMIDAD")
+
