@@ -42,7 +42,7 @@ st.text_area('Firma del propietario-contacto')
 #st.divider()
 if st.button("Enviar CONFORMIDAD"):
     if on:
-        st.success('Gracias por su confirmidad!', icon="✅")
+        st.success('Gracias por su conformidad!', icon="✅")
     else:
         st.warning('Contactaremos con usted lo más rápido posible', icon="⚠️")
 
