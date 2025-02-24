@@ -16,7 +16,13 @@ st.info('Incidencia 325416_001, oficio PINTURA', icon="ℹ️")
 
 st.text_area('Por favor, describa el trabajo ralizado')
 #img_file_buffer = st.camera_input("Adjuntar fotografía",label_visibility="collapsed")
-st.button("Adjuntar fotografía")
+#st.button("Adjuntar fotografía")
+with st.expander("Adjuntar fotografía"):
+    enable = st.checkbox("Enable camera")
+    picture = st.camera_input("Take a picture", disabled=not enable)
+
+    if picture:
+        st.image(picture)
 
 st.text_input('Nombre y apellidos')
 st.text_input('DNI del firmante')
