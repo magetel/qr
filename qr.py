@@ -8,18 +8,18 @@ st.logo("logo-aedas.svg")
 #st.header('Gestión de incidencias postventa')
 
 #st.divider()
-#st.subheader('Promoción: KANE')
-st.subheader('Vivienda en KANE, Bloque 1, Escalera 1, Planta 2, Letra B')
+st.subheader('Gestión de incidencias postventa AEDAS Homes')
+#st.subheader('Vivienda en KANE, Bloque 1, Escalera 1, Planta 2, Letra B')
 
 #st.divider()
+st.error('Promo: KANE; Vivienda: Bloque 1, Escalera 1, Planta 2, Letra B', icon="👷‍♂️")
 st.info('Incidencia 325416_001, oficio PINTURA', icon="ℹ️")
 
-st.text_area('Por favor, describa el trabajo ralizado')
+st.text_area('Por favor, describa el trabajo realizado')
 #img_file_buffer = st.camera_input("Adjuntar fotografía",label_visibility="collapsed")
-#st.button("Adjuntar fotografía")
 with st.expander("Adjuntar fotografía"):
-    enable = st.checkbox("Enable camera")
-    picture = st.camera_input("Take a picture", disabled=not enable)
+    enable = st.checkbox("Habilitar cámara")
+    picture = st.camera_input("Subir foto", disabled=not enable)
 
     if picture:
         st.image(picture)
@@ -44,6 +44,5 @@ if st.button("Enviar CONFORMIDAD"):
     if on:
         st.success('Gracias por su conformidad!', icon="✅")
     else:
-        st.warning('Contactaremos con usted lo más rápido posible', icon="⚠️")
-
+        st.warning('Contactaremos con usted lo antes posible', icon="⚠️")
 
